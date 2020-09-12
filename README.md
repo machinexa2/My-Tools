@@ -9,7 +9,7 @@
 7. [SSRFuck](https://github.com/machinexa2/SSRFuck): SSRF Testing
 8. [XSSTerminal](https://github.com/machinexa2/XSSTerminal): Interactive XSS Development
 
-## Script like tools not yet released
+## Script like tools in development
 1. Certex: Info from Certificate  
 2. EXIF-Tools: EXIF Payload Generation  
 3. RSA-Tools: RSA Scripts  
