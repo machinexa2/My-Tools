@@ -15,8 +15,7 @@
 3. RSA-Tools: RSA Scripts  
  
 ## Script like tools not yet released
-1. MyBinaries
-2. URLCleaner
-3. HostChecker
-4. InsaneBuster
-5. MEMBrute
+1. URLCleaner
+2. HostChecker
+3. InsaneBuster
+4. MEMBrute
