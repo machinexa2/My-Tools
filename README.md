@@ -13,9 +13,9 @@
 1. Certex: Info from Certificate  
 2. EXIF-Tools: EXIF Payload Generation  
 3. RSA-Tools: RSA Scripts  
+4. HackingScripts: Some Scripts to save time
  
 ## Script like tools not yet released
 1. URLCleaner
 2. HostChecker
 3. InsaneBuster
-4. MEMBrute
