@@ -1,23 +1,23 @@
 #!/usr/bin/python3
-from lib.Globals import ColorObj
-from lib.Functions import starter, get_cert_data
-from lib.PathFunctions import PathFunction
-from argparse import ArgumentParser
+
 from termcolor import colored
+from argparse import ArgumentParser
 from concurrent.futures import ThreadPoolExecutor
 
-parser = ArgumentParser(description=colored('Domain and Organization Extractor from Certificate', color='yellow'), epilog=colored("Enjoy bug hunting", color='yellow'))
-parser.add_argument('-w', '--wordlist', type=str, help='Absolute path of subdomain wordlist')
+from lib.Globals import ColorObj
+from lib.Functions import starter, get_cert_data, write_output
+
+parser = ArgumentParser(description=colored('Extract data from SSL/TLS certificates', color='yellow'), epilog=colored("Enjoy bug hunting", color='yellow'))
+group = parser.add_mutually_exclusive_group()
+group.add_argument('---', '---', dest='stdin',  action="store_true", help='Input from stdin')
+group.add_argument('-d', '--domain', type=str, help="Domain")
+group.add_argument('-w', '--wordlist', type=str, help='Wordlist (subdomains)')
 parser.add_argument('-oD', '--output-directory', type=str, help="Output file directory")
-parser.add_argument('-d', '--domain', type=str, help="Domain name")
 parser.add_argument('-t', '--threads', type=int, help="Number of threads")
 parser.add_argument('-b', '--banner', action="store_true", help="Print banner and exit")
 argv = parser.parse_args()
-starter(argv)
 
-FPathApp = PathFunction()
-input_data = [line.rstrip('\n') for line in open(argv.wordlist)]
-output_file = open(FPathApp.slasher(argv.output_directory) + argv.domain + '.cert', 'a')
+input_data = starter(argv)
 orgs = set()
 commons = set()
 
@@ -33,12 +33,6 @@ with ThreadPoolExecutor(max_workers=argv.threads) as Submitter:
         common, org = future_object.result()
         commons.update([common])
         orgs.update([org])
-for org in orgs:
-    print(f"{ColorObj.good} Found {org} from Certificates")
-    output_file.write(org + ',')
-output_file.write('\n')
 
-for common in commons:
-    print(f"{ColorObj.good} Found {common} from Certificates")
-    output_file.write(common + '\n')
-    output_file.close()
+if argv.output_directory:
+    write_output(argv.output_directory, argv.domain, orgs, commons)
