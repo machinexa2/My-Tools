@@ -1,17 +1,21 @@
-# My Computer
-All Repositories brought together!
+# My-Tools
+## Tool List
+1. [CRLFi](https://github.com/machinexa2/CRLFi): CRLF injector
+2. [EventTimer](https://github.com/machinexa2/EventTimer): Event Management Countdown
+3. [GoogleDorker](https://github.com/machinexa2/GoogleDorker): Google Dorker
+4. [GoBasic](https://github.com/machinexa2/GoBasic): Go Functions
+5. [GithubDorker](https://github.com/machinexa2/GithubDorker): Github Dorker
+6. [JScanner](https://github.com/machinexa2/JScanner): Javascript Scanner
+7. [SSRFuck](https://github.com/machinexa2/SSRFuck): SSRF Testing
+8. [XSSTerminal](https://github.com/machinexa2/XSSTerminal): Interactive XSS Development
 
-* **[I-am-New-To-Bug-Bounty](https://github.com/machinexa2/I-Am-New-To-Bug-Bounty)**
-* **[My Account](https://github.com/machinexa2/My-Account)**
-* **[My Articles](https://github.com/machinexa2/My-Articles)**
-* **[My Backup](https://github.com/machinexa2/My-Backup)**
-* **[My Books](https://github.com/machinexa2/My-Books)**
-* **[My CTFs](https://github.com/machinexa2/My-CTFs)**
-* **[My Document](https://github.com/machinexa2/My-Documents)**
-* **[My Forks](https://github.com/machinexa2/My-Forks)**
-* **[My Knowledge](https://github.com/machinexa2/My-Knowledge)**
-* **[My Projects](https://github.com/machinexa2/My-Projects)**
-* **[My Scripts](https://github.com/machinexa2/My-Scripts)**
-* **[My Tools](https://github.com/machinexa2/My-Tools)**
-* **[Saved Games](https://github.com/machinexa2/Saved-Games)**
-* **[To Do](https://github.com/machinexa2/To-Do)**
+## Script like tools in development
+1. Certex: Info from Certificate  
+2. EXIF-Tools: EXIF Payload Generation  
+3. RSA-Tools: RSA Scripts  
+4. HackingScripts: Some Scripts to save time
+ 
+## Script like tools not yet released
+1. URLCleaner
+2. HostChecker
+3. InsaneBuster
