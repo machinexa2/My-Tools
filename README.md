@@ -1,13 +1,13 @@
 # My-Tools
 ## Tool List
-* **[CRLFi](https://github.com/machinexa2/CRLFi)**: CRLF injector
-* **[EventTimer](https://github.com/machinexa2/EventTimer)**: Event Management Countdown
-* **[GoogleDorker](https://github.com/machinexa2/GoogleDorker)**: Google Dorker
-* **[GoBasic](https://github.com/machinexa2/GoBasic)**: Go Functions
-* **[GithubDorker](https://github.com/machinexa2/GithubDorker)**: Github Dorker
-* **[JScanner](https://github.com/machinexa2/JScanner)**: Javascript Scanner
-* **[SSRFuck](https://github.com/machinexa2/SSRFuck)**: SSRF Testing
-* **[XSSTerminal](https://github.com/machinexa2/XSSTerminal)**: Interactive XSS Development
+* **[CRLFi](https://github.com/machinexa2/CRLFi)** : Automatic CRLF Injector
+* **[EventTimer](https://github.com/machinexa2/EventTimer)** : Event Management Utility
+* **[GoogleDorker](https://github.com/machinexa2/GoogleDorker)** : Google Dorker
+* **[GoBasic](https://github.com/machinexa2/GoBasic)** : Go Functions
+* **[GithubDorker](https://github.com/machinexa2/GithubDorker)** : Github Dorker
+* **[JScanner](https://github.com/machinexa2/JScanner)** : URL Scanner
+* **[SSRFuck](https://github.com/machinexa2/SSRFuck)** : SSRF Testing
+* **[XSSTerminal](https://github.com/machinexa2/XSSTerminal)** : Interactive XSS Development
 
 ## Script like tools in development
 * Certex: Info from Certificate  
