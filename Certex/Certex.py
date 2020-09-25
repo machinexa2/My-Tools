@@ -17,13 +17,13 @@ parser.add_argument('-t', '--threads', type=int, help="Number of threads")
 parser.add_argument('-b', '--banner', action="store_true", help="Print banner and exit")
 argv = parser.parse_args()
 
-input_data = starter(argv)
+input_wordlist = starter(argv)
 orgs = set()
 commons = set()
 
 with ThreadPoolExecutor(max_workers=argv.threads) as Submitter:
     try:
-        future_objects = [Submitter.submit(get_cert_data, subdomain) for subdomain in input_data]
+        future_objects = [Submitter.submit(get_cert_data, subdomain) for subdomain in input_wordlist]
     except KeyboardInterrupt:
         print(f"{ColorObj.bad} Keyboard Interrupt Detected. Aborting")
         exit()
