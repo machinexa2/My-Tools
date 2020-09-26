@@ -44,14 +44,21 @@ def get_cert_data(hostname: str) -> tuple:
     print(f"{ColorObj.good} Found {common}, {org}", end="\n")
     return common, org
 
-def write_output(filepath, filename, orgs, commons) -> tuple:
+def write_output_directory(filepath, filename, orgs, commons) -> tuple:
     FPathApp = PathFunction()
     output_file = open(FPathApp.slasher(filepath) + filename + '.certex', 'a')
     for org in orgs:
-        print(f"{ColorObj.good} Writing {org} from Certificates")
         output_file.write(org)
         output_file.write('\n')
     for common in commons:
-        print(f"{ColorObj.good} Writing {common} from Certificates")
         output_file.write(common + '\n')
         output_file.close()
+
+def write_output(filename, orgs, commons) -> tuple:
+    FPathApp = PathFunction()
+    output_file = open(filename, 'a')
+    for org in orgs:
+        output_file.write(org)
+        output_file.write('\n')
+    for common in commons:
+        output_file.write(common + '\n')

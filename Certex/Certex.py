@@ -5,14 +5,17 @@ from argparse import ArgumentParser
 from concurrent.futures import ThreadPoolExecutor
 
 from lib.Globals import ColorObj
-from lib.Functions import starter, get_cert_data, write_output
+from lib.Functions import starter, get_cert_data
+from lib.Functions import write_output, write_output_directory
 
 parser = ArgumentParser(description=colored('Extract data from SSL/TLS certificates', color='yellow'), epilog=colored("Enjoy bug hunting", color='yellow'))
-group = parser.add_mutually_exclusive_group()
-group.add_argument('---', '---', dest='stdin',  action="store_true", help='Input from stdin')
-group.add_argument('-d', '--domain', type=str, help="Domain")
-group.add_argument('-w', '--wordlist', type=str, help='Wordlist (subdomains)')
-parser.add_argument('-oD', '--output-directory', type=str, help="Output file directory")
+input_group = parser.add_mutually_exclusive_group()
+output_group = parser.add_mutually_exclusive_group()
+input_group.add_argument('---', '---', dest='stdin',  action="store_true", help='Input from stdin')
+input_group.add_argument('-d', '--domain', type=str, help="Domain")
+input_group.add_argument('-w', '--wordlist', type=str, help='Wordlist (subdomains)')
+output_group.add_argument('-oD', '--output-directory', type=str, help="Output file directory")
+output_group.add_argument('-o', '--output', type=str, help="Output file")
 parser.add_argument('-t', '--threads', type=int, help="Number of threads")
 parser.add_argument('-b', '--banner', action="store_true", help="Print banner and exit")
 argv = parser.parse_args()
@@ -35,4 +38,6 @@ with ThreadPoolExecutor(max_workers=argv.threads) as Submitter:
         orgs.update([org])
 
 if argv.output_directory:
-    write_output(argv.output_directory, argv.domain, orgs, commons)
+    write_output_directory(argv.output_directory, argv.domain, orgs, commons)
+if argv.output:
+    write_output(argv.output, orgs, commons)

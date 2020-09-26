@@ -1,5 +1,6 @@
 # My-Tools
 ## Tool List
+* **[Certex](https://github.com/machinexa2/Certex)** : Extract data from Certs
 * **[CRLFi](https://github.com/machinexa2/CRLFi)** : Automatic CRLF Injector
 * **[EventTimer](https://github.com/machinexa2/EventTimer)** : Event Management Utility
 * **[GoogleDorker](https://github.com/machinexa2/GoogleDorker)** : Google Dorker
