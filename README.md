@@ -9,7 +9,7 @@
 * **[JScanner](https://github.com/machinexa2/JScanner)** : URL Scanner
 * **[SSRFuck](https://github.com/machinexa2/SSRFuck)** : SSRF Testing
 * **[XSSTerminal](https://github.com/machinexa2/XSSTerminal)** : Interactive XSS Development
-* Certex: Info from Certificate  
+* **[Certex](https://github.com/machinexa2/Certex)**: Info from Certificate  
 
 ## Script like tools in development/ Minor Scripts
 * EXIF-Tools: EXIF Payload Generation  
