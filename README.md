@@ -11,7 +11,7 @@
 * **[XSSTerminal](https://github.com/machinexa2/XSSTerminal)** : Interactive XSS Development
 * Certex: Info from Certificate  
 
-## Script like tools in development
+## Script like tools in development/ Minor Scripts
 * EXIF-Tools: EXIF Payload Generation  
 * RSA-Tools: RSA Scripts  
 * HackingScripts: Some Scripts to save time
