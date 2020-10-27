@@ -9,7 +9,6 @@
 * **[JScanner](https://github.com/machinexa2/JScanner)** : URL Scanner
 * **[SSRFuck](https://github.com/machinexa2/SSRFuck)** : SSRF Testing
 * **[XSSTerminal](https://github.com/machinexa2/XSSTerminal)** : Interactive XSS Development
-* **[URL Cleaner](https://github.com/machinexa2/URLCleaner)** : URLs shortener/cleaner
 
 ## Script like tools in development/ Minor Scripts
 * EXIF-Tools: EXIF Payload Generation  
