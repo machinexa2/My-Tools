@@ -15,7 +15,7 @@
 * RSA-Tools: RSA Scripts  
 * HackingScripts: Some Scripts to save time
  
-## Script like tools not yet released
+## Script like tools not yet released/ not developed
 * URLCleaner
 * HostChecker
 * InsaneBuster
