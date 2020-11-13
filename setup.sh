@@ -1,3 +1,7 @@
+shopt -s expand_aliases
+source ~/.bashrc
+source ~/.bash_aliases
+source ~/.bash_profile
 read -p "Enter password: " passmepass
 github_password=":""$passmepass""@"
 
@@ -8,3 +12,4 @@ do
 		echo `echo "$repository"".git" | sed s/'github.com'/'machinexa2:@github.com'/g | sed s/':@'/$github_password/g`
 	fi
 done
+gitpass
