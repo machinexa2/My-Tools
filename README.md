@@ -19,3 +19,7 @@
 * URLCleaner
 * HostChecker
 * InsaneBuster
+
+## Note
+* All of my tools works on latest version of modules, no venv necessary
+* If binary/binaryname of tool doesn't work, move it to upper folder to make it work
