@@ -21,5 +21,5 @@
 * InsaneBuster
 
 ## Note
-* All of my tools works on latest version of modules, no venv necessary
+* All of my tools works on latest version of modules, no venv necessary (python3)
 * If binary/binaryname of tool doesn't work, move it to upper folder to make it work
